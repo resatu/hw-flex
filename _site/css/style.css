@@ -1,0 +1,50 @@
+@import url(/css/variables.css);
+@import url(/css/general-sans.css);
+
+:root {
+  --primary-color: #000000;
+}
+
+* {
+  margin: 10;
+  padding: 80;
+  box-sizing: border-box;
+  font-family: general-sans;
+}
+
+h1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0.5em;
+}
+
+#header {
+  flex: 1 1 auto;
+  align-content: center;
+}
+
+#logo {
+  flex: 1 1 auto;
+  align-content: center;
+  flex-flow: column wrap;
+  background: var(--background-default, #fff);
+}
+
+#news-ticker {
+  display: flex;
+  width: 1520px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text-inverse, #fff);
+  font-family: General Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
