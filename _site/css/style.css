@@ -1,50 +1,124 @@
 @import url(/css/variables.css);
 @import url(/css/general-sans.css);
 
-:root {
-  --primary-color: #000000;
-}
-
 * {
-  margin: 10;
-  padding: 80;
   box-sizing: border-box;
-  font-family: general-sans;
+  font-family: General Sans;
 }
 
-h1 {
+.page-padding {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.header {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
-  padding: 0.5em;
+  max-width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-#header {
-  flex: 1 1 auto;
-  align-content: center;
-}
-
-#logo {
-  flex: 1 1 auto;
-  align-content: center;
-  flex-flow: column wrap;
-  background: var(--background-default, #fff);
-}
-
-#news-ticker {
+.navbar-menu {
   display: flex;
-  width: 1520px;
-  padding: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--text-default, #000);
+  /* text/medium */
+  font-family: General Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hr {
+  height: 1px;
+}
+
+.hero {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-ticker {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: var(--background-primary, #000);
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: row;
   align-items: flex-start;
-  gap: 10px;
+  gap: 20px;
+}
+
+.news-ticker-text {
   color: var(--text-inverse, #fff);
   font-family: General Sans;
   font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.news-ticker-content {
+  color: var(--text-inverse, #fff);
+  font-family: General Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.magazine-headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.magazine-headline-title {
+  color: var(--text-default, #000);
+  /* heading/large uppercase */
+  font-family: General Sans;
+  font-size: 104px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 114.4px */
+  text-transform: uppercase;
+  max-width: 50%;
+
+}
+
+.magazine-headline-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.magazine-headline-content-data {
+  display: flex;
+  gap: 24px;
 }
